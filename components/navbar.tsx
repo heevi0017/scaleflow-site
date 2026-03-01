@@ -53,9 +53,9 @@ export function Navbar() {
               {link.name}
             </Link>
           ))}
-          <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/90 transition-colors">
+          <a href="https://tally.so/r/9qdRJK" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/90 transition-colors">
             Let's Talk
-          </button>
+          </a>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -85,9 +85,9 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <button className="mt-4 bg-white text-black px-8 py-3 rounded-full text-lg font-semibold">
+              <a href="https://tally.so/r/9qdRJK" target="_blank" rel="noopener noreferrer" className="mt-4 bg-white text-black px-8 py-3 rounded-full text-lg font-semibold">
                 Let's Talk
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

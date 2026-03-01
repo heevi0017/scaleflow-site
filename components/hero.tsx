@@ -63,9 +63,9 @@ export function Hero() {
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
           </button>
-          <button className="px-8 py-4 glass rounded-full font-semibold text-lg text-white hover:bg-white/10 transition-all hover:scale-105">
+          <a href="https://tally.so/r/9qdRJK" target="_blank" rel="noopener noreferrer" className="px-8 py-4 glass rounded-full font-semibold text-lg text-white hover:bg-white/10 transition-all hover:scale-105 inline-block">
             Contact Us
-          </button>
+          </a>
         </motion.div>
       </div>
 
