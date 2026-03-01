@@ -2,6 +2,8 @@ import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { Work } from "@/components/work"
+import { About } from "@/components/about"
+import { Testimonials } from "@/components/testimonials"
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -11,20 +13,27 @@ export default function Home() {
       <Hero />
       <Services />
       <Work />
+      <About />
+      <Testimonials />
       
-      {/* Call to Action Section */}
-      <section id="contact" className="py-32 relative">
+      {/* Final CTA Section */}
+      <section className="py-32 relative">
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight">
-            Ready to shape <br />
-            <span className="text-gradient">the future?</span>
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 tracking-tight text-balance">
+            Разберём твою ситуацию <br />
+            <span className="text-gradient">за 30 минут</span>
           </h2>
           <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto">
-            Let's collaborate to build something extraordinary. Your vision, our expertise.
+            Бесплатный созвон — поймём можем ли помочь друг другу.
           </p>
-          <button className="px-10 py-5 bg-white text-black rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]">
-            Start a Project
-          </button>
+          <a
+            href="https://tally.so/r/9qdRJK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-10 py-5 bg-white text-black rounded-full font-bold text-xl hover:scale-105 transition-transform shadow-[0_0_40px_-10px_rgba(255,255,255,0.3)]"
+          >
+            Записаться на созвон
+          </a>
         </div>
         
         {/* Background Gradient for CTA */}

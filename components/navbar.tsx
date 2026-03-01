@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
 import { Menu, X } from 'lucide-react'
 import { cn } from "@/lib/utils"
@@ -16,10 +16,9 @@ export function Navbar() {
   })
 
   const navLinks = [
-    { name: "Work", href: "#work" },
-    { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Услуги", href: "#services" },
+    { name: "Кейсы", href: "#cases" },
+    { name: "Обо мне", href: "#about" },
   ]
 
   return (
@@ -39,7 +38,7 @@ export function Navbar() {
         )}
       >
         <Link href="/" className="text-2xl font-bold tracking-tighter relative z-50">
-          Lumina<span className="text-blue-400">.</span>
+          Scale<span className="text-blue-400">Flow</span>
         </Link>
 
         {/* Desktop Menu */}
@@ -54,7 +53,7 @@ export function Navbar() {
             </Link>
           ))}
           <a href="https://tally.so/r/9qdRJK" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-5 py-2 rounded-full text-sm font-semibold hover:bg-white/90 transition-colors">
-            Let's Talk
+            Обсудить проект
           </a>
         </div>
 
@@ -86,7 +85,7 @@ export function Navbar() {
                 </Link>
               ))}
               <a href="https://tally.so/r/9qdRJK" target="_blank" rel="noopener noreferrer" className="mt-4 bg-white text-black px-8 py-3 rounded-full text-lg font-semibold">
-                Let's Talk
+                Обсудить проект
               </a>
             </div>
           </motion.div>

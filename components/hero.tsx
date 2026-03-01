@@ -25,7 +25,7 @@ export function Hero() {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
             </span>
             <span className="text-xs font-medium text-white/80 uppercase tracking-wider">
-              Available for new projects
+              Открыт для новых проектов
             </span>
           </div>
         </motion.div>
@@ -34,11 +34,11 @@ export function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-          className="text-5xl md:text-7xl lg:text-9xl font-bold tracking-tighter mb-8 text-gradient"
+          className="text-4xl md:text-6xl lg:text-8xl font-bold tracking-tighter mb-8 text-gradient text-balance"
         >
-          Digital
+          Масштабируем бренды
           <br />
-          Alchemy
+          через AI и Digital Marketing
         </motion.h1>
 
         <motion.p
@@ -47,25 +47,30 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          We transform complex ideas into fluid, intuitive digital experiences. 
-          Blending art, technology, and strategy to shape the future.
+          Full cycle: упаковка + платный трафик + органика.
+          От красивой картинки до реальных денег.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col items-center gap-4"
         >
-          <button className="group relative px-8 py-4 bg-white text-black rounded-full font-semibold text-lg overflow-hidden transition-all hover:scale-105">
+          <a
+            href="https://tally.so/r/9qdRJK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative px-8 py-4 bg-white text-black rounded-full font-semibold text-lg overflow-hidden transition-all hover:scale-105 inline-block"
+          >
             <span className="relative z-10 flex items-center gap-2">
-              View Our Work <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              Обсудить проект <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </span>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-100 to-white opacity-0 group-hover:opacity-100 transition-opacity" />
-          </button>
-          <a href="https://tally.so/r/9qdRJK" target="_blank" rel="noopener noreferrer" className="px-8 py-4 glass rounded-full font-semibold text-lg text-white hover:bg-white/10 transition-all hover:scale-105 inline-block">
-            Contact Us
           </a>
+          <span className="text-sm text-white/40">
+            Без обещаний миллиона за месяц. Только реальный рост.
+          </span>
         </motion.div>
       </div>
 
