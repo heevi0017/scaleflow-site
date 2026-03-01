@@ -2,7 +2,7 @@
 
 import { GlassCard } from "@/components/ui/glass-card"
 import { motion } from "framer-motion"
-import { AlertTriangle, TrendingDown, Shuffle, Layers, Bot, CheckCircle, User, Megaphone } from 'lucide-react'
+import { AlertTriangle, TrendingDown, Shuffle, Layers, Bot, CheckCircle, User, Megaphone, Target } from 'lucide-react'
 
 const problems = [
   {
@@ -23,17 +23,22 @@ const whyUs = [
   {
     icon: <Layers className="w-8 h-8 text-blue-400" />,
     title: "Full Cycle",
-    description: "Упаковка + трафик + органика",
+    description: "От упаковки до продаж",
   },
   {
     icon: <Bot className="w-8 h-8 text-purple-400" />,
     title: "Реальный AI",
-    description: "Матрица смыслов, AI-агенты, аналитика",
+    description: "Внедряем ИИ там, где он действительно нужен",
+  },
+  {
+    icon: <Target className="w-8 h-8 text-emerald-400" />,
+    title: "Работаем на результат",
+    description: "Тестируем гипотезы, масштабируем что работает",
   },
   {
     icon: <CheckCircle className="w-8 h-8 text-green-400" />,
     title: "Честность",
-    description: "Тестируем гипотезы, масштабируем что работает",
+    description: "Прозрачная аналитика и отчёты на каждом этапе",
   },
 ]
 
@@ -114,7 +119,7 @@ export function Services() {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyUs.map((item, index) => (
               <motion.div
                 key={index}
