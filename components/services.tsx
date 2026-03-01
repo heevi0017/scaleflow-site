@@ -7,7 +7,7 @@ import { AlertTriangle, TrendingDown, Shuffle, Layers, Bot, CheckCircle, User, M
 const problems = [
   {
     icon: <TrendingDown className="w-8 h-8 text-red-400" />,
-    text: "Работаешь на износ — доход не растёт",
+    text: "Работаешь на износ - доход не растёт",
   },
   {
     icon: <AlertTriangle className="w-8 h-8 text-orange-400" />,
@@ -15,7 +15,7 @@ const problems = [
   },
   {
     icon: <Shuffle className="w-8 h-8 text-yellow-400" />,
-    text: "Нет системы — клиенты то есть, то нет",
+    text: "Нет системы - клиенты то есть, то нет",
   },
 ]
 
