@@ -2,24 +2,27 @@
 
 import { GlassCard } from "@/components/ui/glass-card"
 import { motion } from "framer-motion"
-import { TrendingUp, DollarSign } from 'lucide-react'
+import { TrendingUp, DollarSign, ArrowRight } from 'lucide-react'
+import Link from "next/link"
 
 const cases = [
   {
     title: "Инфобиз с нуля",
     metric: "$20 000",
     metricLabel: "в первый запуск",
-    tags: ["Meta Ads", "Контент", "Упаковка"],
+    tags: ["Упаковка", "Разработка инфопродукта", "TikTok", "Reels", "Meta Ads", "Контент-маркетинг"],
     color: "from-blue-500/20 to-cyan-500/20",
     icon: <TrendingUp className="w-6 h-6" />,
+    slug: "infobiz",
   },
   {
     title: "Магазин корейской косметики (США)",
     metric: "с $30k до $120k/мес",
     metricLabel: "рост выручки",
-    tags: ["E-commerce", "Meta Ads", "Органика"],
+    tags: ["E-Commerce", "Meta Ads", "Google Ads", "E-mail Marketing"],
     color: "from-purple-500/20 to-pink-500/20",
     icon: <DollarSign className="w-6 h-6" />,
+    slug: "korean-cosmetics",
   },
 ]
 
@@ -80,13 +83,20 @@ export function Work() {
                     </h3>
                   </div>
                   <p className="text-white/60 text-lg mb-8">{item.metricLabel}</p>
-                  <div className="flex flex-wrap items-center gap-3">
+                  <div className="flex flex-wrap items-center gap-3 mb-8">
                     {item.tags.map((tag, tagIndex) => (
                       <span key={tagIndex} className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-sm">
                         {tag}
                       </span>
                     ))}
                   </div>
+                  <Link
+                    href={`/cases/${item.slug}`}
+                    className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors font-medium group/link"
+                  >
+                    Подробнее
+                    <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 transition-transform" />
+                  </Link>
                 </div>
               </GlassCard>
             </motion.div>

@@ -33,14 +33,16 @@ export function About() {
           <GlassCard className="max-w-3xl">
             <div className="flex flex-col md:flex-row items-start gap-8">
               <div className="shrink-0">
-                <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center text-3xl font-bold">
-                  A
-                </div>
+                <img
+                  src="/images/alex-photo.jpeg"
+                  alt="Алекс"
+                  className="w-28 h-28 rounded-full object-cover border-2 border-white/10"
+                />
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-2">Алекс, 20 лет</h3>
                 <p className="text-white/60 leading-relaxed text-lg">
-                  3 года в маркетинге. Работал с Meta Ads, e-com, инфобизом. Выгорел, попал в депрессию — долго выбирался. Теперь строю ScaleFlow чтобы помочь брендам расти системно — без хаоса и слива бюджетов.
+                  3 года в маркетинге. Работал с Meta Ads, e-com, инфобизом. Выгорел, попал в депрессию - долго выбирался. Теперь строю ScaleFlow чтобы помочь брендам расти системно - без хаоса и слива бюджетов.
                 </p>
               </div>
             </div>

@@ -3,7 +3,7 @@ import { Hero } from "@/components/hero"
 import { Services } from "@/components/services"
 import { Work } from "@/components/work"
 import { About } from "@/components/about"
-import { Testimonials } from "@/components/testimonials"
+
 import { Footer } from "@/components/footer"
 
 export default function Home() {
@@ -14,7 +14,6 @@ export default function Home() {
       <Services />
       <Work />
       <About />
-      <Testimonials />
       
       {/* Final CTA Section */}
       <section className="py-32 relative">
